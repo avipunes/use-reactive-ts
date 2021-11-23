@@ -10,7 +10,8 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "tsc",
-        "test": "react-scripts test"
+        "test": "react-scripts test",
+        "style:check": "prettier --check . || (c=$?; echo \"\ntry running 'npm run style'\"; (exit $c))"
     },
     "eslintConfig": {
         "extends": [
@@ -45,11 +46,25 @@
         "react-dom": "^17.0.2",
         "react-scripts": "4.0.3",
         "typescript": "^4.5.2",
-        "web-vitals": "^1.1.2"
+        "web-vitals": "^1.1.2",
+        "prettier": "^2.4.1",
+        "@commitlint/cli": "^13.2.0",
+        "@commitlint/config-conventional": "^13.2.0",
+        "@semantic-release/exec": "^6.0.1",
+        "semantic-release": "^18.0.0"
     },
     "peerDependencies": {
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-scripts": "4.0.3"
+    },
+    "release": {
+        "branches": [
+            "main"
+        ]
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "all"
     }
 }

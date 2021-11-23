@@ -6,11 +6,11 @@ let renders: number = 0;
 const getRenders = () => renders;
 const getDriver = () => {
     const addTodoInput = document.querySelector(
-        "input[name='add-todo-input']"
+        "input[name='add-todo-input']",
     ) as HTMLInputElement;
 
     const addTodoBtn = document.querySelector(
-        "button[name='add-todo-btn']"
+        "button[name='add-todo-btn']",
     ) as HTMLInputElement;
 
     return {

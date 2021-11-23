@@ -21,10 +21,10 @@ function useReactive<T extends object>(initialState: T): T {
     const state = useMemo(
         () =>
             observer(observerState, () =>
-                setObserverState({ ...observerState })
+                setObserverState({ ...observerState }),
             ),
         // eslint-disable-next-line
-        []
+        [],
     );
 
     return state;
