@@ -1,0 +1,28 @@
+name: pr
+
+on: [push]
+
+jobs:
+    build:
+        name: build
+        runs-on: ubuntu-18.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v1
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  registry-url: "https://npm.pkg.github.com"
+                  node-version: 16
+            - name: clean
+              run: git clean -dfx .
+            - name: install dependencies
+              run: npm ci
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+            - name: commitlint
+              run: npx commitlint -f origin/main -V
+            - name: code style
+              run: npm run style:check
+            - name: tests
+              run: npm test
