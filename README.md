@@ -7,7 +7,7 @@ TODO: add motivation and deeper expiations
 ## Installation
 
 ```sh
-npm install use-reactive --save
+npm install use-reactive-js --save
 ```
 
 ## Usage
