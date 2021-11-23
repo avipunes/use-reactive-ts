@@ -1,0 +1,32 @@
+name: Release
+on:
+    push:
+        branches:
+            - main
+jobs:
+    release:
+        name: Release
+        runs-on: ubuntu-18.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v1
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  registry-url: "https://npm.pkg.github.com"
+                  node-version: 16
+            - name: clean
+              run: git clean -dfx .
+            - name: install dependencies
+              run: npm ci
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+            - name: update .npmrc
+              run: echo "//npm.pkg.github.com/:_authToken=$MY_GITHUB_TOKEN" >> .npmrc
+              env:
+                  MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+            - name: release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+              run: npx semantic-release
