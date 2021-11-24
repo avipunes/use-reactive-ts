@@ -5,6 +5,7 @@
     "author": "Avi Punes <avipunes@gmail.com>",
     "homepage": "https://github.com/avipunes/use-reactive-ts",
     "dependencies": {},
+    "types": "dist/index.d.ts",
     "files": [
         "built/"
     ],
