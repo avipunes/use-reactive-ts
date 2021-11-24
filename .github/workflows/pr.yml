@@ -26,6 +26,8 @@ jobs:
                   NODE_AUTH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
             - name: commitlint
               run: npx commitlint -f origin/main -V
+            - name: build
+              run: npm run build
             - name: code style
               run: npm run style:check
             - name: tests
