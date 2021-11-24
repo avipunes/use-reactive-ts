@@ -7,7 +7,7 @@
     "dependencies": {},
     "types": "dist/index.d.ts",
     "files": [
-        "built/*"
+        "built/"
     ],
     "main": "built/lib.js",
     "scripts": {
