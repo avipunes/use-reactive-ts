@@ -1,12 +1,9 @@
 {
-    "name": "use-reactive-js",
+    "name": "use-reactive-ts",
     "version": "0.0.0-semantically-released",
-    "repository": "git://github.com/avipunes/use-reactive-js.git",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/avipunes"
-    },
+    "repository": "git://github.com/avipunes/use-reactive-ts.git",
     "author": "Avi Punes <avipunes@gmail.com>",
-    "homepage": "https://github.com/avipunes/use-reactive-js",
+    "homepage": "https://github.com/avipunes/use-reactive-ts",
     "dependencies": {},
     "files": [
         "built/"

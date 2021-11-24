@@ -1,4 +1,4 @@
-# Useful Object
+# Use Reactive TS
 
 React hook for having a mutable state that will make reactive without using `setState`.
 
@@ -7,7 +7,7 @@ TODO: add motivation and deeper expiations
 ## Installation
 
 ```sh
-npm install use-reactive-js --save
+npm install use-reactive-ts --save
 ```
 
 ## Usage
