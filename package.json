@@ -7,7 +7,12 @@
     "dependencies": {},
     "types": "dist/index.d.ts",
     "files": [
-        "built/"
+        "built/hook.d.ts",
+        "built/hook.js",
+        "built/hook.js.map",
+        "built/lib.d.ts",
+        "built/lib.js",
+        "built/lib.js.map"
     ],
     "main": "built/lib.js",
     "scripts": {
