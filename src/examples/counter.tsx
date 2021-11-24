@@ -1,5 +1,5 @@
 import React from "react";
-import { useReactive } from "../hook";
+import { useReactive } from "../lib/hook";
 
 type CounterState = {
     counter: number;

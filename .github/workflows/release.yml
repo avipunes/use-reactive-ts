@@ -22,7 +22,7 @@ jobs:
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
             - name: build
-              run: npm run build && ls -a && ls built
+              run: npm run build && ls -a && ls built/lib
             - name: update .npmrc
               run: echo "//npm.pkg.github.com/:_authToken=$MY_GITHUB_TOKEN" >> .npmrc
               env:

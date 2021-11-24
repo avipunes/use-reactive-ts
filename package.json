@@ -5,11 +5,11 @@
     "author": "Avi Punes <avipunes@gmail.com>",
     "homepage": "https://github.com/avipunes/use-reactive-ts",
     "dependencies": {},
-    "types": "built/lib.d.ts",
+    "types": "built/lib/index.d.ts",
     "files": [
-        "built/"
+        "built/lib"
     ],
-    "main": "built/lib.js",
+    "main": "built/lib/index.js",
     "scripts": {
         "start": "react-scripts start",
         "build": "tsc",

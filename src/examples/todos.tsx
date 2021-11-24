@@ -1,5 +1,5 @@
 import React from "react";
-import { useReactive } from "../hook";
+import { useReactive } from "../lib/hook";
 
 export type Todo = {
     description: string;
