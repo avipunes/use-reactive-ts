@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 describe("[useReactive performance suit]", () => {
     it("shouldn't increase number of renders on one level state object", async () => {
         const { SimpleInputComponent, getRenders, getDriver } = await import(
-            "./resource/simple-input-test-component"
+            "./resources/simple-input-test-component"
         );
         render(<SimpleInputComponent msg="hello" />);
         const driver = getDriver();
@@ -19,7 +19,7 @@ describe("[useReactive performance suit]", () => {
 
     it("shouldn't increase number of renders on multi levels state object", async () => {
         const { TodosTestComponent, getRenders, getDriver } = await import(
-            "./resource/todo-test-component"
+            "./resources/todo-test-component"
         );
         render(<TodosTestComponent />);
         const driver = getDriver();
