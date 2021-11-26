@@ -9,6 +9,13 @@
     "files": [
         "built/lib"
     ],
+    "keywords": [
+        "react",
+        "reactive",
+        "immutable",
+        "mutable",
+        "immer"
+    ],
     "main": "built/lib/index.js",
     "scripts": {
         "start": "react-scripts start",
