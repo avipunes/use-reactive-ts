@@ -1,3 +1,9 @@
+[![npm](https://img.shields.io/npm/v/use-reactive-ts)](https://www.npmjs.com/package/use-reactive-ts)
+[![npm](https://img.shields.io/npm/dt/use-reactive-ts)](https://www.npmjs.com/package/use-reactive-ts)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/avipunes/use-reactive-ts/Release)](https://github.com/avipunes/use-reactive-ts/actions/workflows/release.yml)
+![npm bundle size](https://img.shields.io/bundlephobia/min/use-reactive-ts)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/use-reactive-ts)
+
 # Use Reactive TS
 
 React hook for having a mutable state that will be reactive without using `setState`. this hook is provided with TS first approach and performance consideration so it will **not** increase the number of your components renders.
