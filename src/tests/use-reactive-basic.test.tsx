@@ -16,7 +16,7 @@ describe("[useReactive basic flow suit]", () => {
 
     it("should take a default state and render upon change", async () => {
         const { SimpleInputComponent, getDriver } = await import(
-            "./resource/simple-input-test-component"
+            "./resources/simple-input-test-component"
         );
         render(<SimpleInputComponent msg="hello" />);
         const driver = getDriver();

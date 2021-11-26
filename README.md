@@ -90,13 +90,15 @@ const Counter = () => {
 };
 ```
 
+For more usage, check out [Test Suits](https://github.com/avipunes/use-reactive-ts/tree/main/src/tests) and [Examples](https://github.com/avipunes/use-reactive-ts/tree/main/src/examples).
+
 ---
 
 ## Test
 
 -   [x] Component is reactive by mutable state changes
 -   [x] Number of component renders
--   [ ] Complex component tree number of renders
+-   [ ] Number of complex components tree renders
 
 ```sh
 npm test
