@@ -51,6 +51,10 @@ function useReactive<T extends object>(initialState: T): T;
 ### Simple Counter
 
 ```typescript
+type CounterState = {
+    counter: number;
+};
+
 const Counter = () => {
     let state = useReactive<CounterState>({ counter: 0 });
 
@@ -72,8 +76,14 @@ const Counter = () => {
 ### Counter with nested object
 
 ```typescript
+type CounterInnerState = {
+    inner: {
+        counter: number;
+    };
+};
+
 const Counter = () => {
-    let state = useReactive<CounterState>({ inner: { counter: 0 } });
+    let state = useReactive<CounterInnerState>({ inner: { counter: 0 } });
 
     if (state.inner.counter > 5) {
         state.inner.counter = 0;
@@ -91,6 +101,8 @@ const Counter = () => {
 ```
 
 For more usage, check out [Test Suits](https://github.com/avipunes/use-reactive-ts/tree/main/src/tests) and [Examples](https://github.com/avipunes/use-reactive-ts/tree/main/src/examples).
+
+[Sandbox](https://codesandbox.io/embed/upbeat-pine-o8pof?fontsize=14&hidenavigation=1&theme=dark)
 
 ---
 
