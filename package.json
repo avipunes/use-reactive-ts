@@ -5,9 +5,9 @@
     "author": "Avi Punes <avipunes@gmail.com>",
     "homepage": "https://github.com/avipunes/use-reactive-ts",
     "dependencies": {},
-    "types": "built/lib/index.d.ts",
+    "types": "built/index.d.ts",
     "files": [
-        "built/lib"
+        "built"
     ],
     "keywords": [
         "react",
@@ -16,10 +16,10 @@
         "mutable",
         "immer"
     ],
-    "main": "built/lib/index.js",
+    "main": "built/index.js",
     "scripts": {
         "start": "react-scripts start",
-        "build": "tsc",
+        "build": "esbuild ./src/lib/* --outdir=built --sourcemap",
         "test": "react-scripts test",
         "style:check": "prettier --check . || (c=$?; echo \"\ntry running 'npm run style'\"; (exit $c))"
     },
@@ -61,7 +61,8 @@
         "@commitlint/cli": "^13.2.0",
         "@commitlint/config-conventional": "^13.2.0",
         "@semantic-release/exec": "^6.0.1",
-        "semantic-release": "^18.0.0"
+        "semantic-release": "^18.0.0",
+        "esbuild": "^0.14.0"
     },
     "peerDependencies": {
         "react": "^17.0.2",
