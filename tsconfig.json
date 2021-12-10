@@ -2,8 +2,8 @@
     "compilerOptions": {
         "outDir": "built",
         "module": "esnext",
-        "target": "es5",
-        "lib": ["es5", "es6", "es7", "es2017", "dom"],
+        "target": "es6",
+        "lib": ["es6", "es7", "es2017", "dom"],
         "sourceMap": true,
         "allowJs": true,
         "jsx": "react",
@@ -28,6 +28,6 @@
         "resolveJsonModule": true,
         "isolatedModules": true
     },
-    "include": ["src/**/*"],
+    "include": ["src/lib/**/*"],
     "exclude": ["node_modules"]
 }
